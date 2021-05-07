@@ -13,9 +13,10 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 
+
 /**
- * This class contains method for reading the data from Excel sheet
- * @author SOUMYASANTA SAHOO
+ * 
+ * @author girish
  *
  */
 public class ExcelUtility {

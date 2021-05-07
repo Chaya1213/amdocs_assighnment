@@ -1,0 +1,5 @@
+1) Write shellscript to find error messgae in serverloffile.lo?
+==>	Win +r,enter enter eventvmr
+
+2) Write shellscript to ping the machine is up or down?
+==>	ping -c4 $ip_address	

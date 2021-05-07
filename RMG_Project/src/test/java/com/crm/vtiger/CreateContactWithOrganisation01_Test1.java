@@ -28,13 +28,7 @@ public class CreateContactWithOrganisation01_Test1 extends BaseClass {
 		driver.findElement(By.name("lastname")).sendKeys("Sahoo");
 		driver.findElement(By.xpath("//input[@name='account_name']/following-sibling::img[@title='Select']")).click();
 		Set<String> window=driver.getWindowHandles();
-		/*Iterator<String> iterator=window.iterator();
-		while(iterator.hasNext())
-		{
-			String winId=iterator.next();
-			driver.switchTo().window(winId);
-			System.out.println(driver.getTitle());
-		}*/
+		
 		String orgName="techM2";
 		wUtil.switchtoWindow(driver, "Accounts");
 		driver.findElement(By.id("search_txt")).sendKeys(orgName);
@@ -42,14 +36,6 @@ public class CreateContactWithOrganisation01_Test1 extends BaseClass {
 		driver.findElement(By.linkText(orgName)).click();
 		wUtil.switchtoWindow(driver, "Contacts");
 		driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
-
-		//Logout
-		/*Actions act=new Actions(driver);
-		WebElement logoutImage=driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
-		act.moveToElement(logoutImage).perform();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//a[text()='Sign Out']")).click();*/
-
 	}
 
 }

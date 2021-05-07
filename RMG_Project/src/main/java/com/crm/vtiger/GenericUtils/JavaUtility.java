@@ -3,16 +3,18 @@ package com.crm.vtiger.GenericUtils;
 import java.util.Date;
 import java.util.Random;
 
-/*
- * This class contains java specific generic libraries
- * @Soumya
+
+/**
+ * 
+ * @author girish
+ *
  */
 
 public class JavaUtility {
 	
 	/*
 	 * Generarte Random Number
-	 * @Soumya
+	 * @girish
 	 */
 	
 	public static String getRandomData()

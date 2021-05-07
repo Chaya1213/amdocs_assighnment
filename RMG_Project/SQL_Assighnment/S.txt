@@ -1,0 +1,25 @@
+1) Display all the employees who are working as salesman and is earning more than 1400 and working in department number 30?
+==>	SELECT *
+	FROM EMP
+	WHERE JOB=SALESMAN AND SAL<1400 AND DEPTNO = 30;
+
+2) Display all the employees who are working IN department number 20 & 30?
+==>	SELECT *
+	FROM EMP
+	WHERE DEPTNO=20 OR DEPTNO = 30;
+
+3) Display all the employees who are earning salary between 1000 & 4000?
+==>	SELECT *
+	FROM EMP
+	WHERE SAL BETWEEN (1000,4000);
+
+
+4)Arrange all the employees by their department number?
+	SELECT *
+	FROM EMP
+	ORDER BY DEPTNO;
+
+5)Arrange all the employees by their department number AND employees name?
+	SELECT *
+	FROM EMP
+	ORDER BY DEPTNO,ENAME;
